@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.site-header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #083634;
+    padding: 10px 0px;
+}
+
+.logo-image {
+    height: 40px;
+}
+
+.nav-links ul {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.nav-links ul li {
+    margin-left: 15px;
+    list-style-type: none;
+}
+
+.nav-links ul li a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.btn {
+    padding: 9px 15px;
+    border-radius: 50px;
+    border: none;
+    margin-right: 10px;
+}
+
+.btn-booking {
+    background-color: #b58955;
+    color: white;
+}
+
+.btn-number {
+    text-decoration: underline;
+    display: flex;
+    align-items: center;
+}
+
+.btn-number .phone-icon {
+    height: 12px;
+    margin-right: 5px;
+}
+
+.btn-apply {
+    display: none;
+}
+
+.nav-icon-container {
+    display: none;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media screen and (max-width: 768px) {
+
+    .btn-number,
+    .btn-booking {
+        display: none;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    .logo-image {
+        height: 30px;
+    }
+
+    .btn-apply {
+        display: block;
+        color: white;
+        background-color: #b58955;
+        padding: 7px 15px;
+    }
+
+    .nav-icon-container {
+        display: block;
+    }
+
+    .nav-icon-container .nav-list-con{
+        height: 30px;
+    }
+}
