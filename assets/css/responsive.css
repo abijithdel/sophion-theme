@@ -1,0 +1,26 @@
+@media screen and (max-width: 768px) {
+    .title, .hero-des{
+        text-align: center;
+    }
+
+    .suitability-top-section{
+        flex-direction: column;
+    }
+
+    .img-cotainer, .story-container{
+        width: 100%;
+    }
+
+    .suitability{
+        padding: 20px 10px;
+    }
+
+    .suitability-main-title{
+        text-align: center;
+        font-size: 23px;
+    }
+
+    .suitability-btn{
+        padding: 8px 70px;
+    }
+}

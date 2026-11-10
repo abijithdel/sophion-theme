@@ -1,0 +1,127 @@
+.hero{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 80px 10px 15px 10px ;
+}
+
+.title, .title-inner, .suitability-main-title{
+    font-family: 'Playfair Display', serif;
+}
+
+.title-inner{
+    color: #bf946a;
+    font-style: italic;
+}
+
+.hero-check-btn{
+    padding: 8px 70px;
+    border-radius: 50px;
+    border: none;
+    background-color: #bf946a;
+    color: white;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.arrow-icon{
+    height: 10px;
+    margin-left: 10px;
+}
+
+/* Suitability Section */
+
+.suitability{
+    padding: 50px 90px 20px 90px;
+    background-color: #f9f8f5;
+}
+
+.suitability-top-section{
+    display: flex;
+    font-size: 25px;
+}
+
+.img-cotainer, .story-cotainer{
+    width: 50%;
+}
+
+.img-cotainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.couple-photo{
+    width: 100%;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+
+.story-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+}
+
+.stoty-des{
+    font-size: 17px;
+}
+
+.suitability-section-list{
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.suitability-section-item{
+    font-size: 15px;
+    background-color: #f9f8f5;
+    margin-top: 20px;
+    padding: 5px 10px;
+    color: #51555e;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.bottom-section{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.botton-text{
+    background-color: #edeeea;
+    text-align: center;
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.suitability-btn{
+    border: none;
+    background-color: #bf946a;
+    padding: 9px 90px;
+    color: white;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.check-icon{
+    height: 15px;
+    margin-right: 10px;
+    fill: #bf946a;
+}

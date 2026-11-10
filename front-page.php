@@ -1,2 +1,5 @@
 <?php get_template_part('template-parts/header'); ?>
-<h1>He;</h1>
+<main>
+    <?php get_template_part('template-parts/sections/hero'); ?>
+    <?php get_template_part('template-parts/sections/suitability'); ?>
+</main>
