@@ -1,26 +1,325 @@
+/* ==========================================================
+   RESPONSIVE.CSS  —  Sophion Theme
+   Breakpoints:
+     Tablet         : max-width 1024px
+     Mobile         : max-width 768px
+     Small Mobile   : max-width 480px
+   ========================================================== */
+
+
+/* ----------------------------------------------------------
+   TABLET  (≤ 1024px)
+   ---------------------------------------------------------- */
+@media screen and (max-width: 1024px) {
+
+    /* --- Suitability --- */
+    .suitability {
+        padding: 40px 40px 20px;
+    }
+
+    .suitability-main-title {
+        font-size: 22px;
+    }
+
+    /* --- Story --- */
+    .story-section {
+        padding: 50px 40px 40px;
+    }
+
+    .story-cards-container {
+        gap: 20px;
+    }
+
+    .story-card {
+        width: calc(50% - 10px);
+    }
+
+    .story-doctor-name {
+        font-size: 17px;
+    }
+
+    /* --- Lifestyle --- */
+    .lifestyle-section {
+        padding: 55px 40px 50px;
+    }
+
+    .lifestyle-title {
+        font-size: 34px;
+    }
+
+    .lifestyle-body {
+        gap: 32px;
+    }
+}
+
+
+/* ----------------------------------------------------------
+   MOBILE  (≤ 768px)
+   ---------------------------------------------------------- */
 @media screen and (max-width: 768px) {
-    .title, .hero-des{
+
+    /* === HERO === */
+    .hero {
+        padding: 70px 20px 20px;
+    }
+
+    .title,
+    .hero-des {
         text-align: center;
     }
 
-    .suitability-top-section{
+    /* === SUITABILITY === */
+    .suitability {
+        padding: 30px 20px 20px;
+    }
+
+    .suitability-top-section {
         flex-direction: column;
     }
 
-    .img-cotainer, .story-container{
+    .img-cotainer,
+    .story-container {
         width: 100%;
     }
 
-    .suitability{
-        padding: 20px 10px;
+    .img-cotainer {
+        padding: 0;
     }
 
-    .suitability-main-title{
+    .couple-photo {
+        margin-top: 16px;
+    }
+
+    .suitability-main-title {
+        font-size: 20px;
         text-align: center;
-        font-size: 23px;
     }
 
-    .suitability-btn{
-        padding: 8px 70px;
+    .stoty-des {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .suitability-btn {
+        padding: 9px 60px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .botton-text {
+        font-size: 13px;
+    }
+
+    /* === STORY === */
+    .story-section {
+        padding: 40px 20px 30px;
+    }
+
+    .story-title {
+        font-size: 28px;
+        margin-bottom: 28px;
+    }
+
+    /* Stack cards vertically */
+    .story-cards-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    /* === LIFESTYLE === */
+    .lifestyle-section {
+        padding: 50px 20px 40px;
+    }
+
+    .lifestyle-title {
+        font-size: 28px;
+    }
+
+    .lifestyle-subtitle {
+        font-size: 13px;
+    }
+
+    .lifestyle-body {
+        flex-direction: column;
+        gap: 36px;
+    }
+
+    .lifestyle-approach-card {
+        padding: 28px 22px;
+    }
+
+    .lifestyle-approach-title {
+        font-size: 22px;
+    }
+
+    .lifestyle-cta-btn {
+        padding: 12px 36px;
+        font-size: 14px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .story-card {
+        width: 100%;
+        max-width: 480px;
+    }
+
+    .story-logo-img {
+        height: 30px;
+    }
+
+    .story-brand-name {
+        font-size: 10px;
+    }
+
+    .story-doctor-name {
+        font-size: 18px;
+    }
+
+    .story-treatment-label,
+    .story-reg-number {
+        font-size: 12px;
+    }
+
+    .story-disclaimer {
+        margin-top: 24px;
+        padding: 14px 16px;
+    }
+
+    .story-disclaimer p {
+        font-size: 12px;
+    }
+}
+
+
+/* ----------------------------------------------------------
+   SMALL MOBILE  (≤ 480px)
+   ---------------------------------------------------------- */
+@media screen and (max-width: 480px) {
+
+    /* === HERO === */
+    .hero {
+        padding: 60px 14px 16px;
+    }
+
+    .hero-check-btn {
+        padding: 8px 40px;
+        font-size: 13px;
+    }
+
+    /* === SUITABILITY === */
+    .suitability {
+        padding: 24px 14px 16px;
+    }
+
+    .suitability-main-title {
+        font-size: 18px;
+    }
+
+    .suitability-section-item {
+        font-size: 13px;
+    }
+
+    .suitability-btn {
+        padding: 9px 30px;
+        font-size: 13px;
+    }
+
+    /* === STORY === */
+    .story-section {
+        padding: 30px 14px 24px;
+    }
+
+    .story-title {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .story-card {
+        padding: 16px;
+        border-radius: 14px;
+    }
+
+    .story-card-logo {
+        gap: 8px;
+        padding-bottom: 8px;
+    }
+
+    .story-logo-img {
+        height: 26px;
+    }
+
+    .story-brand-name {
+        font-size: 9px;
+        letter-spacing: 0.06em;
+    }
+
+    .story-photo-caption {
+        font-size: 11px;
+    }
+
+    .story-card-details {
+        padding-top: 8px;
+    }
+
+    .story-doctor-name {
+        font-size: 16px;
+    }
+
+    .story-treatment-label,
+    .story-reg-number {
+        font-size: 11px;
+    }
+
+    .story-disclaimer {
+        padding: 12px 12px;
+        border-radius: 10px;
+    }
+
+    .story-disclaimer p {
+        font-size: 11px;
+        line-height: 1.5;
+    }
+
+    /* === LIFESTYLE === */
+    .lifestyle-section {
+        padding: 36px 14px 32px;
+    }
+
+    .lifestyle-title {
+        font-size: 24px;
+    }
+
+    .lifestyle-list-heading {
+        font-size: 10px;
+    }
+
+    .lifestyle-list-item {
+        font-size: 13px;
+        gap: 10px;
+    }
+
+    .lifestyle-star {
+        height: 15px;
+        width: 15px;
+    }
+
+    .lifestyle-approach-title {
+        font-size: 19px;
+    }
+
+    .lifestyle-approach-desc,
+    .lifestyle-highlight-text {
+        font-size: 12px;
+    }
+
+    .lifestyle-highlight-label {
+        font-size: 9px;
+    }
+
+    .lifestyle-cta-btn {
+        padding: 11px 24px;
+        font-size: 13px;
     }
 }
