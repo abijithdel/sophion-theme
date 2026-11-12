@@ -73,6 +73,18 @@ function mytheme_enqueue_styles() {
         );
     }
 
+    // Footer CSS
+    $footer_css = $theme_path . '/assets/css/footer.css';
+
+    if (file_exists($footer_css)) {
+        wp_enqueue_style(
+            'footer-css',
+            $theme_uri . '/assets/css/footer.css',
+            array('responsive-css'),
+            filemtime($footer_css)
+        );
+    }
+
 }
 add_action('wp_enqueue_scripts', 'mytheme_enqueue_styles');
 

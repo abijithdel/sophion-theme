@@ -434,3 +434,549 @@
     width: auto;
 }
 
+/* =========================================
+   Dr Section
+   ========================================= */
+
+.dr-section {
+    padding: 70px 90px;
+    background-color: #fff;
+}
+
+.dr-inner {
+    display: flex;
+    gap: 70px;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---- Left column ---- */
+.dr-left {
+    flex: 0 0 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+}
+
+.dr-photo-card {
+    width: 100%;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.10);
+}
+
+.dr-photo {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+/* Carousel dots */
+.dr-dots {
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.dr-dot {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background-color: #d9d0c5;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.dr-dot--active {
+    background-color: #bf946a;
+    transform: scale(1.2);
+}
+
+/* Name block */
+.dr-name-wrap {
+    text-align: center;
+}
+
+.dr-meet {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 6px;
+    line-height: 1.2;
+}
+
+.dr-name-italic {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #1a1a1a;
+}
+
+.dr-role {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #bf946a;
+    margin: 0;
+}
+
+/* ---- Right column ---- */
+.dr-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+.dr-bio {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #3a3a3a;
+    line-height: 1.75;
+    margin: 0;
+}
+
+.dr-focus-heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    color: #3a3a3a;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Focus list */
+.dr-focus-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.dr-focus-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background-color: #f9f7f4;
+    border-radius: 10px;
+    padding: 12px 18px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #3a3a3a;
+    transition: background-color 0.25s ease;
+}
+
+.dr-focus-item:hover {
+    background-color: #f2ece3;
+}
+
+.dr-heart-icon {
+    height: 18px;
+    width: 18px;
+    flex-shrink: 0;
+}
+
+/* Quote */
+.dr-quote {
+    background-color: #faf7f3;
+    border-left: 3px solid #bf946a;
+    border-radius: 0 10px 10px 0;
+    padding: 18px 22px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    font-style: italic;
+    color: #555;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* Apply Now button */
+.dr-cta-wrap {
+    display: flex;
+}
+
+.dr-apply-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background-color: #bf946a;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 55px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 18px rgba(191, 148, 106, 0.30);
+}
+
+.dr-apply-btn:hover {
+    background-color: #a97d55;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 26px rgba(191, 148, 106, 0.42);
+}
+
+.dr-arrow-icon {
+    height: 12px;
+    width: auto;
+}
+
+/* =========================================
+   Check Your Suitability Section
+   ========================================= */
+
+.check-section {
+    background-color: #f5f2ec;
+    padding: 80px 90px;
+}
+
+.check-inner {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* ---- Left column ---- */
+.check-left {
+    flex: 0 0 310px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+/* Heading */
+.check-heading-wrap {
+    margin-bottom: 10px;
+}
+
+.check-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 38px;
+    font-weight: 700;
+    color: #1a1a1a;
+    line-height: 1.2;
+    margin-bottom: 14px;
+}
+
+.check-title-inner {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-weight: 400;
+    color: #bf946a;
+}
+
+.check-subtitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 13.5px;
+    color: #555;
+    line-height: 1.7;
+}
+
+.check-subtitle strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+/* Step cards */
+.check-step {
+    background: #fff;
+    border: 1.5px solid #e8e1d6;
+    border-radius: 16px;
+    padding: 20px 20px 18px;
+    text-align: center;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    cursor: default;
+}
+
+.check-step--active {
+    border-color: #bf946a;
+    box-shadow: 0 4px 20px rgba(191, 148, 106, 0.14);
+}
+
+.check-step-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8px;
+    color: #bf946a;
+}
+
+.check-step--active .check-step-icon {
+    color: #bf946a;
+}
+
+.check-step:not(.check-step--active) .check-step-icon {
+    color: #bbb;
+}
+
+.check-step-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    color: #999;
+    margin: 0 0 4px;
+}
+
+.check-step-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 6px;
+    line-height: 1.3;
+}
+
+.check-step-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.5px;
+    color: #777;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* ---- Right column: form card ---- */
+.check-right {
+    flex: 1;
+}
+
+.check-form-card {
+    background: #fff;
+    border-radius: 20px;
+    padding: 36px 40px 32px;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+}
+
+/* Form header */
+.check-form-header {
+    text-align: center;
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #f0ebe2;
+}
+
+.check-form-icon {
+    margin-bottom: 10px;
+}
+
+.check-form-step-label {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    color: #999;
+    margin: 0 0 4px;
+}
+
+.check-form-step-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin: 0 0 6px;
+}
+
+.check-form-step-desc {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12.5px;
+    color: #888;
+    margin: 0;
+}
+
+/* Field group */
+.check-field-group {
+    margin-bottom: 18px;
+}
+
+.check-label {
+    display: block;
+    font-family: 'Poppins', sans-serif;
+    font-size: 10.5px;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    color: #3a3a3a;
+    margin-bottom: 7px;
+    text-transform: uppercase;
+}
+
+.check-required {
+    color: #bf946a;
+    margin-left: 2px;
+}
+
+.check-input {
+    width: 100%;
+    border: none;
+    border-bottom: 1.5px solid #d8d1c5;
+    background: transparent;
+    padding: 9px 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    color: #1a1a1a;
+    outline: none;
+    transition: border-color 0.25s ease;
+    border-radius: 0;
+}
+
+.check-input::placeholder {
+    color: #bbb;
+    font-size: 13px;
+}
+
+.check-input:focus {
+    border-bottom-color: #bf946a;
+}
+
+/* Date input with calendar icon */
+.check-input-icon-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.check-input-icon-wrap .check-input {
+    padding-right: 28px;
+}
+
+.check-cal-icon {
+    position: absolute;
+    right: 0;
+    pointer-events: none;
+}
+
+/* Radio buttons */
+.check-radio-group {
+    display: flex;
+    gap: 28px;
+    padding: 6px 0;
+}
+
+.check-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.07em;
+    color: #555;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.check-radio {
+    display: none;
+}
+
+.check-radio-custom {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    border: 1.5px solid #ccc;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    transition: border-color 0.25s ease;
+}
+
+.check-radio:checked + .check-radio-custom {
+    border-color: #bf946a;
+    background: radial-gradient(circle, #bf946a 45%, transparent 46%);
+}
+
+.check-radio-label:hover .check-radio-custom {
+    border-color: #bf946a;
+}
+
+/* Phone field */
+.check-phone-wrap {
+    display: flex;
+    align-items: center;
+    border-bottom: 1.5px solid #d8d1c5;
+    transition: border-color 0.25s ease;
+}
+
+.check-phone-wrap:focus-within {
+    border-bottom-color: #bf946a;
+}
+
+.check-country-code {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 13px;
+    color: #3a3a3a;
+    padding: 9px 12px 9px 0;
+    white-space: nowrap;
+    border-right: 1px solid #d8d1c5;
+    margin-right: 12px;
+    cursor: pointer;
+}
+
+.check-flag {
+    font-size: 16px;
+}
+
+.check-input--phone {
+    border: none;
+    padding-left: 0;
+    flex: 1;
+}
+
+.check-input--phone:focus {
+    border-bottom-color: transparent;
+}
+
+/* Form footer */
+.check-form-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.check-next-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #bf946a;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 13px 70px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 18px rgba(191, 148, 106, 0.30);
+}
+
+.check-next-btn:hover {
+    background-color: #a97d55;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 26px rgba(191, 148, 106, 0.42);
+}
+
+.check-secure-note {
+    font-family: 'Poppins', sans-serif;
+    font-size: 11.5px;
+    color: #aaa;
+    text-align: center;
+    margin: 0;
+}
+
+
+

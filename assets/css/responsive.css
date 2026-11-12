@@ -50,6 +50,44 @@
     .lifestyle-body {
         gap: 32px;
     }
+
+    /* --- Dr --- */
+    .dr-section {
+        padding: 55px 40px;
+    }
+
+    .dr-left {
+        flex: 0 0 280px;
+    }
+
+    .dr-inner {
+        gap: 44px;
+    }
+
+    .dr-meet {
+        font-size: 22px;
+    }
+
+    /* --- Check --- */
+    .check-section {
+        padding: 60px 40px;
+    }
+
+    .check-left {
+        flex: 0 0 270px;
+    }
+
+    .check-title {
+        font-size: 30px;
+    }
+
+    .check-inner {
+        gap: 36px;
+    }
+
+    .check-form-card {
+        padding: 28px 28px 24px;
+    }
 }
 
 
@@ -190,6 +228,74 @@
     .story-disclaimer p {
         font-size: 12px;
     }
+
+    /* === DR === */
+    .dr-section {
+        padding: 50px 20px;
+    }
+
+    .dr-inner {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .dr-left {
+        flex: none;
+        width: 100%;
+        max-width: 420px;
+    }
+
+    .dr-right {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .dr-meet {
+        font-size: 22px;
+    }
+
+    .dr-apply-btn {
+        width: 100%;
+        justify-content: center;
+        padding: 13px 30px;
+    }
+
+    /* === CHECK === */
+    .check-section {
+        padding: 50px 20px;
+    }
+
+    .check-inner {
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    .check-left {
+        flex: none;
+        width: 100%;
+    }
+
+    .check-title {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .check-subtitle {
+        text-align: center;
+    }
+
+    .check-right {
+        width: 100%;
+    }
+
+    .check-form-card {
+        padding: 28px 22px 24px;
+    }
+
+    .check-radio-group {
+        gap: 18px;
+    }
 }
 
 
@@ -321,5 +427,91 @@
     .lifestyle-cta-btn {
         padding: 11px 24px;
         font-size: 13px;
+    }
+
+    /* === DR === */
+    .dr-section {
+        padding: 36px 14px;
+    }
+
+    .dr-inner {
+        gap: 24px;
+    }
+
+    .dr-meet {
+        font-size: 19px;
+    }
+
+    .dr-bio,
+    .dr-focus-heading {
+        font-size: 13px;
+    }
+
+    .dr-focus-item {
+        font-size: 13px;
+        padding: 10px 14px;
+        gap: 10px;
+    }
+
+    .dr-heart-icon {
+        height: 15px;
+        width: 15px;
+    }
+
+    .dr-quote {
+        font-size: 12px;
+        padding: 14px 16px;
+    }
+
+    .dr-apply-btn {
+        font-size: 13px;
+        padding: 11px 24px;
+    }
+
+    /* === CHECK === */
+    .check-section {
+        padding: 36px 14px;
+    }
+
+    .check-title {
+        font-size: 26px;
+    }
+
+    .check-subtitle {
+        font-size: 12.5px;
+    }
+
+    .check-step {
+        padding: 16px;
+    }
+
+    .check-step-title {
+        font-size: 14px;
+    }
+
+    .check-step-desc {
+        font-size: 11.5px;
+    }
+
+    .check-form-card {
+        padding: 22px 16px 20px;
+    }
+
+    .check-form-step-title {
+        font-size: 17px;
+    }
+
+    .check-radio-group {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .check-radio-label {
+        font-size: 10px;
+    }
+
+    .check-next-btn {
+        font-size: 14px;
+        padding: 12px 30px;
     }
 }
