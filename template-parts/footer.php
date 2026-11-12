@@ -1,59 +1,77 @@
+<?php
+/**
+ * Template Part – Footer
+ *
+ * @package Sophion
+ */
+?>
+
 <footer class="site-footer">
 
-    <div class="footer-top">
+    <!-- ========================================================
+         MAIN FOOTER COLUMNS
+    ========================================================= -->
+    <div class="footer-container">
 
-        <!-- Col 1: Brand -->
+        <!-- Col 1 · Brand + tagline -->
         <div class="footer-brand">
-            <div class="footer-logo-wrap">
-                <!-- Circle monogram icon -->
-                <div class="footer-logo-icon">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60" width="52" height="52" fill="none">
-                        <circle cx="30" cy="30" r="28" stroke="#c8a97e" stroke-width="1.6"/>
-                        <text x="50%" y="54%" dominant-baseline="middle" text-anchor="middle"
-                              font-family="Playfair Display, serif" font-size="26" fill="#c8a97e" font-style="italic">L</text>
-                    </svg>
-                </div>
-                <span class="footer-brand-name">LIFESTYLE<span class="footer-brand-smiles">SMILES</span></span>
-            </div>
-            <p class="footer-tagline">Serving the Brighton community for over 50 years<br>with compassionate, comprehensive dental care.</p>
-        </div>
 
-        <!-- Col 2: Location -->
-        <div class="footer-col">
-            <p class="footer-col-heading">Location</p>
-            <p class="footer-col-text">Shop 2, 28 Carpenter St, Brighton</p>
-            <a class="footer-directions-link" href="https://maps.google.com/?q=Shop+2,+28+Carpenter+St,+Brighton" target="_blank" rel="noopener">
-                Get Directions
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/>
-                </svg>
+            <a href="<?php echo esc_url( home_url( '/' ) ); ?>" class="footer-logo" aria-label="<?php bloginfo( 'name' ); ?>">
+                <img
+                    src="<?php echo esc_url( get_template_directory_uri() . '/assets/images/logo.webp' ); ?>"
+                    alt="<?php bloginfo( 'name' ); ?>"
+                    class="footer-logo-img"
+                    width="180"
+                    height="60"
+                    loading="lazy"
+                />
+            </a><!-- .footer-logo -->
+
+            <p class="footer-tagline">
+                Serving the Brighton community for over 50 years<br>
+                with compassionate, comprehensive dental care.
+            </p>
+
+        </div><!-- .footer-brand -->
+
+        <!-- Col 2 · Location -->
+        <div class="footer-col footer-location">
+            <h3 class="footer-col-heading">Location</h3>
+            <p class="footer-address">Shop 2, 28 Carpenter St, Brighton</p>
+            <a href="https://maps.google.com/?q=Shop+2+28+Carpenter+St+Brighton"
+               class="footer-directions"
+               target="_blank"
+               rel="noopener noreferrer">
+                Get Directions <span class="footer-arrow" aria-hidden="true">&#8594;</span>
             </a>
-        </div>
+        </div><!-- .footer-location -->
 
-        <!-- Col 3: Contact & Hours -->
-        <div class="footer-col">
-            <p class="footer-col-heading">Contact Details</p>
+        <!-- Col 3 · Contact & hours -->
+        <div class="footer-col footer-contact">
+            <h3 class="footer-col-heading">Contact Details</h3>
             <p class="footer-hours-label">Opening Hours</p>
-            <p class="footer-hours-row">Mon – Fri, &nbsp;8:00am – 5:30pm</p>
-            <p class="footer-hours-row">Sat – By appointment only</p>
-            <p class="footer-hours-row">Sun – Closed</p>
-        </div>
+            <ul class="footer-hours">
+                <li>Mon &ndash; Fri,&ensp;8:00am &ndash; 5:30pm</li>
+                <li>Sat &ndash; By appointment only</li>
+                <li>Sun &ndash; Closed</li>
+            </ul>
+        </div><!-- .footer-contact -->
 
-    </div>
+    </div><!-- .footer-container -->
 
-    <!-- Bottom bar -->
+    <!-- ========================================================
+         BOTTOM BAR
+    ========================================================= -->
     <div class="footer-bottom">
         <p class="footer-copy">
-            Copyright &copy; <?php echo date('Y'); ?> Lifestyle Smiles. All Rights Reserved.
-            &nbsp;|&nbsp;
-            <a class="footer-legal-link" href="#">Disclaimer</a>
-            &nbsp;|&nbsp;
-            <a class="footer-legal-link" href="#">Privacy Statement</a>
+            Copyright &copy; <?php echo esc_html( date( 'Y' ) ); ?> <?php bloginfo( 'name' ); ?>.
+            All Rights Reserved
+            <span class="footer-divider">|</span>
+            <a href="<?php echo esc_url( home_url( '/disclaimer' ) ); ?>">Disclaimer</a>
+            <span class="footer-divider">|</span>
+            <a href="<?php echo esc_url( get_privacy_policy_url() ?: home_url( '/privacy-statement' ) ); ?>">Privacy Statement</a>
         </p>
-    </div>
+    </div><!-- .footer-bottom -->
 
-</footer>
+</footer><!-- .site-footer -->
 
-<?php wp_footer(); ?>
-</body>
-</html>

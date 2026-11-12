@@ -98,9 +98,9 @@ function mytheme_scripts() {
         wp_enqueue_script(
             'main-js',
             get_template_directory_uri() . '/assets/js/main.js',
-            array(),
-            filemtime($js_file),
-            true
+            array(),            // no dependencies
+            filemtime($js_file),// version = file modification time (auto cache-busts)
+            true                // load in footer — DOM is ready
         );
     }
 

@@ -19,15 +19,6 @@ $arrow = esc_url( $img . 'right-arrow-white.svg' );
                 >
             </div>
 
-            <!-- Carousel dots (decorative) -->
-            <div class="dr-dots" aria-hidden="true">
-                <span class="dr-dot dr-dot--active"></span>
-                <span class="dr-dot"></span>
-                <span class="dr-dot"></span>
-                <span class="dr-dot"></span>
-                <span class="dr-dot"></span>
-            </div>
-
             <div class="dr-name-wrap">
                 <p class="dr-meet">Meet <span class="dr-name-italic">Dr Julie Taing</span></p>
                 <p class="dr-role">COSMETIC DENTIST</p>

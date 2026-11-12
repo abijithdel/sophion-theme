@@ -91,6 +91,7 @@
 }
 
 
+
 /* ----------------------------------------------------------
    MOBILE  (≤ 768px)
    ---------------------------------------------------------- */
@@ -513,5 +514,114 @@
     .check-next-btn {
         font-size: 14px;
         padding: 12px 30px;
+    }
+}
+
+
+/* ==========================================================
+   FOOTER – RESPONSIVE
+   ========================================================== */
+
+/* ── Tablet (≤ 1024px) ── */
+@media screen and (max-width: 1024px) {
+
+    .footer-container {
+        padding : 48px 40px 44px;
+        gap     : 36px;
+    }
+
+    .footer-bottom {
+        padding : 16px 40px;
+    }
+
+    .footer-brand {
+        flex         : 0 0 240px;
+        padding-right: 0;
+    }
+
+    .footer-logo-name {
+        font-size : 13px;
+    }
+}
+
+
+/* ── Mobile (≤ 768px) ── */
+@media screen and (max-width: 768px) {
+
+    .footer-container {
+        flex-direction : column;
+        padding        : 40px 24px 36px;
+        gap            : 32px;
+    }
+
+    .footer-brand {
+        flex         : none;
+        width        : 100%;
+        padding-right: 0;
+    }
+
+    .footer-col {
+        flex  : none;
+        width : 100%;
+    }
+
+    .footer-tagline {
+        max-width : 100%;
+    }
+
+    .footer-bottom {
+        padding    : 16px 24px;
+        text-align : center;
+    }
+
+    .footer-copy {
+        font-size   : 11.5px;
+        line-height : 1.9;
+    }
+}
+
+
+/* ── Small Mobile (≤ 480px) ── */
+@media screen and (max-width: 480px) {
+
+    .footer-container {
+        padding : 32px 16px 28px;
+        gap     : 28px;
+    }
+
+    .footer-logo-img {
+        height    : 46px;
+        max-width : 160px;
+    }
+
+    .footer-logo-name {
+        font-size      : 12px;
+        letter-spacing : 0.14em;
+    }
+
+    .footer-tagline {
+        font-size : 13px;
+    }
+
+    .footer-col-heading {
+        font-size : 13px;
+    }
+
+    .footer-address,
+    .footer-hours-label,
+    .footer-directions {
+        font-size : 13px;
+    }
+
+    .footer-hours li {
+        font-size : 13px;
+    }
+
+    .footer-bottom {
+        padding : 14px 16px;
+    }
+
+    .footer-copy {
+        font-size : 11px;
     }
 }

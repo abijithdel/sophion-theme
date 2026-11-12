@@ -1,105 +1,190 @@
+/* ==========================================================
+   HEADER.CSS — Sophion Theme
+   ========================================================== */
+
+/* ── Reset ──────────────────────────────────────────────── */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+    padding    : 0;
+    margin     : 0;
+    box-sizing : border-box;
     font-family: 'Poppins', sans-serif;
-
 }
 
+/* ── Header bar ─────────────────────────────────────────── */
 .site-header {
-    display: flex;
-    justify-content: space-around;
+    display         : flex;
+    justify-content : space-around;
+    align-items     : center;
     background-color: #083634;
-    padding: 10px 0px;
+    padding         : 10px 20px;
+    position        : relative; /* anchors the mobile nav dropdown */
 }
 
+/* ── Logo ───────────────────────────────────────────────── */
 .logo-image {
     height: 40px;
 }
 
+/* ── Desktop nav links ──────────────────────────────────── */
 .nav-links ul {
-    display: flex;
-    height: 100%;
+    display    : flex;
+    height     : 100%;
     align-items: center;
 }
 
 .nav-links ul li {
-    margin-left: 15px;
-    list-style-type: none;
+    margin-left     : 15px;
+    list-style-type : none;
 }
 
 .nav-links ul li a {
-    color: white;
+    color          : white;
     text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 15px;
+    font-family    : 'Poppins', sans-serif;
+    font-size      : 15px;
 }
 
+/* ── Buttons ────────────────────────────────────────────── */
 .btn-container {
-    display: flex;
+    display    : flex;
     align-items: center;
 }
 
 .btn {
-    padding: 9px 15px;
+    padding      : 9px 15px;
     border-radius: 50px;
-    border: none;
-    margin-right: 10px;
+    border       : none;
+    margin-right : 10px;
+    cursor       : pointer;
+    font-family  : 'Poppins', sans-serif;
+    font-size    : 14px;
 }
 
 .btn-booking {
     background-color: #b58955;
-    color: white;
+    color           : white;
 }
 
 .btn-number {
     text-decoration: underline;
-    display: flex;
-    align-items: center;
+    display        : flex;
+    align-items    : center;
+    background     : transparent;
+    color          : white;
 }
 
 .btn-number .phone-icon {
-    height: 12px;
+    height      : 12px;
     margin-right: 5px;
 }
 
+/* Hidden on desktop — shown only on mobile */
 .btn-apply {
     display: none;
 }
 
+/* Hamburger icon — hidden on desktop */
 .nav-icon-container {
     display: none;
 }
 
-/* MOBILE RESPONSIVE */
 
+/* ── MOBILE  (≤ 768px) ──────────────────────────────────── */
 @media screen and (max-width: 768px) {
 
+    /* Header: keep logo centred, icon left, button right */
+    .site-header {
+        justify-content: space-between;
+        padding        : 10px 16px;
+    }
+
+    /* Show hamburger icon */
+    .nav-icon-container {
+        display    : flex;
+        align-items: center;
+        z-index    : 1000;
+    }
+
+    .nav-list-con {
+        height : 28px;
+        cursor : pointer;
+        display: block;
+    }
+
+    /* Scale logo */
+    .logo-image {
+        height: 32px;
+    }
+
+    /* Hide desktop buttons, show Apply */
     .btn-number,
     .btn-booking {
         display: none;
     }
 
-    .nav-links {
-        display: none;
-    }
-
-    .logo-image {
-        height: 30px;
-    }
-
     .btn-apply {
-        display: block;
-        color: white;
+        display         : block;
+        color           : white;
         background-color: #b58955;
-        padding: 7px 15px;
+        padding         : 7px 14px;
+        font-size       : 13px;
     }
 
-    .nav-icon-container {
-        display: block;
+    /* ── Mobile nav drawer ──────────────────────────────────
+       JS controls visibility via inline style (display block/none).
+       This avoids any CSS specificity conflicts.
+    ──────────────────────────────────────────────────────── */
+    .nav-links {
+        display         : none;        /* JS will override this via inline style  */
+        position        : absolute;
+        top             : 100%;        /* drops directly below the header          */
+        left            : 0;
+        width           : 100%;
+        background-color: #083634;
+        z-index         : 9999;
+        box-shadow      : 0 8px 24px rgba(0, 0, 0, 0.35);
+        padding-bottom  : 10px;
     }
 
-    .nav-icon-container .nav-list-con{
-        height: 30px;
+    /* Stacked links */
+    .nav-links ul,
+    .nav-links .nav-menu {
+        display        : flex;
+        flex-direction : column;
+        align-items    : flex-start;
+        height         : auto;
+        padding        : 4px 20px 12px;
+        gap            : 0;
+        list-style     : none;
+        margin         : 0;
+    }
+
+    .nav-links ul li,
+    .nav-links .nav-menu li {
+        margin-left  : 0;
+        width        : 100%;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    }
+
+    .nav-links ul li:last-child,
+    .nav-links .nav-menu li:last-child {
+        border-bottom: none;
+    }
+
+    .nav-links ul li a,
+    .nav-links .nav-menu li a {
+        display    : block;
+        padding    : 13px 0;
+        font-size  : 15px;
+        color      : #fff;
+        width      : 100%;
+        transition : color 0.2s ease, padding-left 0.2s ease;
+        text-decoration: none;
+    }
+
+    .nav-links ul li a:hover,
+    .nav-links .nav-menu li a:hover {
+        color       : #C8A96E;
+        padding-left: 6px;
     }
 }
